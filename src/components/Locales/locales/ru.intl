@@ -1,0 +1,11 @@
+# See https://github.com/oklas/component-intl-example for starting points.
+
+
+ru:
+  app:
+    locales:
+      name:
+        de: Deutsch
+        en: English
+        ru: Русский
+        zh: 中文

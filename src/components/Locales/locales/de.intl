@@ -1,7 +1,7 @@
 # See https://github.com/oklas/component-intl-example for starting points.
 
 
-en:
+de:
   app:
     locales:
       name:

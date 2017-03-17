@@ -1,31 +1,34 @@
-var MergePlugin = require("merge-webpack-plugin");
+var path = require('path');
 var webpack = require('webpack');
+var IntlPlugin = require("intl-webpack-plugin");
+
 module.exports = {
   entry: "./src/index",
   target: "web",
   output: {
-    path: "./assets",
+    path: path.resolve(__dirname, "assets"),
+    publicPath: "/assets/",
     filename: "bundle.js"
   },
   module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel',
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader',
         query: {
           presets:[ 'es2015', 'stage-0' ]
         }
       },
       { test: /\.(intl|i18n)$/i,
-        loaders: [
-          MergePlugin.loader({group: "[name]"}),
+        use: [
+          IntlPlugin.loader({group: "[name]"}),
           'yaml-loader'
         ]
       },
-      { test: /\.css$/, loader: "css" },
-      { test: /\.(eot|gif|jpg|png|svg|ttf|woff)$/, loader: "url-loader?limit=100000" }
+      { test: /\.css$/, use: "css" },
+      { test: /\.(eot|gif|jpg|png|svg|ttf|woff)$/, use: "url-loader?limit=100000" }
     ]
   },
   plugins: [
-    new MergePlugin({
+    new IntlPlugin({
       search: [ './src/**/*.intl', './src/**/*.i18n' ]
     })
   ]

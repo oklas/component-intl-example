@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "Example of Component Approach to Internationalization",
   "main": "index.js",
-  "scripts": {
-    "build": "webpack"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/oklas/component-intl-example.git"
@@ -25,7 +22,9 @@
     "url": "https://github.com/oklas/component-intl-example/issues"
   },
   "homepage": "https://github.com/oklas/component-intl-example",
-
+  "scripts": {
+    "build": "webpack"
+  },
   "devDependencies": {
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.1",
@@ -37,24 +36,25 @@
     "babel-runtime": "^6.20.0",
     "babel-register": "^6.18.0"
   },
-  "dependencies" : {
+  "dependencies": {
     "babel": "^6.5.2",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.10",
-    "babel-polyfill": "^6.0.16",
-    "babel-runtime": "^6.18.0",
     "babel-plugin-dev-expression": "^0.2.1",
     "babel-plugin-transform-runtime": "^6.15.0",
-    "whatwg-fetch": "^2.0.1",
+    "babel-polyfill": "^6.0.16",
+    "babel-runtime": "^6.18.0",
+    "bundle-loader": "^0.5.4",
+    "component-intl-welcome": "../component-intl-welcome",
+    "json-loader": "^0.5.4",
+    "intl-webpack-plugin": "../../intl-webpack-plugin",
     "node-fetch": "^2.0.0-alpha.3",
-
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "yaml-loader": "^0.4.0",
-    "json-loader": "^0.5.4",
-    "bundle-loader": "^0.5.4",
-    "merge-webpack-plugin": "^0.1.0",
-    "webpack": "^2.2.1"
+    "react-intl": "^2.2.3",
+    "webpack": "^2.2.1",
+    "whatwg-fetch": "^2.0.1",
+    "yaml-loader": "^0.4.0"
   },
   "babel": {
     "presets": [
@@ -79,5 +79,4 @@
       }
     }
   }
-
 }

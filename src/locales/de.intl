@@ -1,0 +1,8 @@
+# See https://github.com/oklas/component-intl-example for starting points.
+
+
+de:
+  app:
+    main-page:
+      title: Komponentenansatz zur Internationalisierung
+      select-language: Sprache wählen

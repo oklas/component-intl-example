@@ -1,7 +1,16 @@
-var en = require('./locales/en.intl');
-var ru = require('./locales/ru.intl');
+import React, {Component} from 'react'
 
-console.log(en);
-console.log(ru);
+import 'whatwg-fetch'
 
-export default () => null
+import locales from './locales'
+
+
+const loadLocale = (locale) => {
+  return fetch(locales[locale])
+  .then(function(response) {
+    return response.json()
+  })
+}
+
+export Selector from './Selector'
+export {locales, loadLocale}

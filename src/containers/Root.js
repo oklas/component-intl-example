@@ -1,16 +1,43 @@
-import React, { PropTypes } from 'react'
+import React, { Component, PropTypes } from 'react'
+import {IntlProvider} from 'react-intl'
 
-import Locales from '../components/Locales'
+import App from './App'
+import {loadLocale, Selector} from '../components/Locales'
 
-Locales()
 
-const App = () => (<div/>)
+class Root extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      locale: '',
+      messages: {}
+    }
+    this.loadLocale('en')
+  }
 
-const Root = () => (
-  <App/>
-)
+  loadLocale = (locale) => {
+    loadLocale(locale)
+      .then((data) => {
+        let messages = data[locale]
+        this.setState({locale,messages})
+      }).catch(function(ex) {
+        console.log('locale loading failed', ex)
+      })
+  }
 
-Root.propTypes = {
-//  store: PropTypes.object.isRequired,
+  render() {
+    return (
+      <IntlProvider
+        locale={this.state.locale}
+        messages={this.state.messages}
+      >
+        <App
+          locale={this.state.locale}
+          onChangeLocale={this.loadLocale}
+        />
+      </IntlProvider>
+    )
+  }
 }
+
 export default Root
