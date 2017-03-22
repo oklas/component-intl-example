@@ -6,4 +6,5 @@ en:
     main-page:
       title: Component Approach to Internationalization
       select-language: Select language
+      locale-file: Locale file loaded
 

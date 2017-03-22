@@ -6,3 +6,4 @@ ru:
     main-page:
       title: Компонентный подход к интернационализации
       select-language: Выберите язык
+      locale-file: Загружен файл локали

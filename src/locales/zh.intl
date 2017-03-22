@@ -6,4 +6,5 @@ zh:
     main-page:
       title: 组件 的方法 至国际化
       select-language: 选择语言
+      locale-file: 区域设置文件加载
 

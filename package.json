@@ -47,7 +47,7 @@
     "bundle-loader": "^0.5.4",
     "component-intl-welcome": "../component-intl-welcome",
     "json-loader": "^0.5.4",
-    "intl-webpack-plugin": "../../intl-webpack-plugin",
+    "intl-webpack-plugin": "^0.1.1",
     "node-fetch": "^2.0.0-alpha.3",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",

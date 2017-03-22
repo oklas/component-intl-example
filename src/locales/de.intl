@@ -6,3 +6,4 @@ de:
     main-page:
       title: Komponentenansatz zur Internationalisierung
       select-language: Sprache wählen
+      locale-file: Gebietsschema-Datei geladen

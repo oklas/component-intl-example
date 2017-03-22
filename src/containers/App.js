@@ -4,7 +4,7 @@ import {FormattedMessage} from 'react-intl'
 import Welcome from 'component-intl-welcome'
 
 
-import {Selector} from '../components/Locales'
+import {locales,Selector} from '../components/Locales'
 import DateTime from '../components/DateTime'
 
 const App = ({locale,onChangeLocale}) => (
@@ -15,6 +15,9 @@ const App = ({locale,onChangeLocale}) => (
     <Selector locale={locale} onChange={onChangeLocale}/>
     <p/>
     <DateTime/>
+    <p/>
+    <FormattedMessage id='app.main-page.locale-file' />: &nbsp;
+    {locales[locale]}
   </div>
 )
 
