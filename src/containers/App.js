@@ -2,10 +2,11 @@ import React, {Component, PropTypes} from 'react'
 import {FormattedMessage} from 'react-intl'
 
 import Welcome from 'component-intl-welcome'
-
+import {} from 'component-intl-welcome/locales'
 
 import {locales,Selector} from '../components/Locales'
 import DateTime from '../components/DateTime'
+
 
 const App = ({locale,onChangeLocale}) => (
   <div>
@@ -18,6 +19,10 @@ const App = ({locale,onChangeLocale}) => (
     <p/>
     <FormattedMessage id='app.main-page.locale-file' />: &nbsp;
     {locales[locale]}
+    <hr/>
+    <h3>"Welcome" - <FormattedMessage id='app.main-page.welcome-component' />:</h3>
+    <Welcome/>
+    <hr/>
   </div>
 )
 

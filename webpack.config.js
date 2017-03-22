@@ -7,7 +7,7 @@ module.exports = {
   target: "web",
   output: {
     path: path.resolve(__dirname, "assets"),
-    publicPath: "/assets/",
+    publicPath: "assets/",
     filename: "bundle.js"
   },
   module: {
@@ -19,7 +19,7 @@ module.exports = {
       },
       { test: /\.(intl|i18n)$/i,
         use: [
-          IntlPlugin.loader({group: "[name]"}),
+          IntlPlugin.loader(),
           'yaml-loader'
         ]
       },

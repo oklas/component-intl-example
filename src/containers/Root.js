@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react'
 import {IntlProvider} from 'react-intl'
 
-import App from './App'
 import {loadLocale, Selector} from '../components/Locales'
 
+import App from './App'
 
 class Root extends Component {
   constructor(props) {
