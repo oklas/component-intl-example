@@ -10,7 +10,7 @@ import DateTime from '../components/DateTime'
 
 
 const App = ({locale,onChangeLocale}) => (
-  <div>
+  <div className="main-content">
     <h1><FormattedMessage id='app.main-page.title' /></h1>
     <Text id='main-page.intro-top'/>
     <hr/>
