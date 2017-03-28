@@ -30,6 +30,7 @@ module.exports = {
   plugins: [
     new IntlPlugin({
       search: [ './src/**/*.intl', './src/**/*.i18n' ]
-    })
+    }),
+    new webpack.optimize.UglifyJsPlugin()
   ]
 };
