@@ -21,7 +21,7 @@ en:
         [intl-webpack-plugin](https://github.com/oklas/intl-webpack-plugin)
         for great [webpack](https://webpack.js.org/) module bundler
         to build locals according to component approach to
-        internationalization. The classy
+        internationalization. The excellent
         [react-intl](https://github.com/yahoo/react-intl)
         internationalization library is used to format and handling
         translations.
