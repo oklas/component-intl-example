@@ -11,21 +11,23 @@ import DateTime from '../components/DateTime'
 
 const App = ({locale,onChangeLocale}) => (
   <div className="main-content">
-    <h1><FormattedMessage id='app.main-page.title' /></h1>
-    <Text id='main-page.intro-top'/>
+    <h1><Text id='main-page.title' /></h1>
+    <Text markdown id='main-page.intro-top'/>
+
     <hr/>
-    <FormattedMessage id='app.main-page.select-language' />: &nbsp;
+
+    <Text id='main-page.select-language' />: &nbsp;
     <Selector locale={locale} onChange={onChangeLocale}/>
-    <p/>
-    <DateTime/>
-    <p/>
-    <FormattedMessage id='app.main-page.locale-file' />: &nbsp;
+    <p/><DateTime/>
+    <p/><Text id='main-page.locale-file' />: &nbsp;
     {locales[locale]}
+
     <hr/>
-    <h3>"Welcome" - <FormattedMessage id='app.main-page.welcome-component' />:</h3>
+
+    <h3>"Welcome" - <Text id='main-page.welcome-component' />:</h3>
     <Welcome/>
     <hr/>
-    <Text id='main-page.intro-bottom'/>
+    <Text markdown id='main-page.intro-bottom'/>
   </div>
 )
 
