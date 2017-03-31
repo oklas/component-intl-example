@@ -27,11 +27,11 @@ en:
         translations.
 
       intro-bottom:  |
-        This is demonstration programm with minimal amount of dependencies shows
-        how works and how to build and configure application and libraries.
-        This demo application consists of two parts (source repos):
+        This is demonstration programm with minimal amount of dependencies
+        shows how works and how to build and configure application and
+        libraries. This demo application consists of two parts (source repos):
 
-        * [demonstration application](https://github.com/oklas/component-intl-example) -
+        * [component-intl-example](https://github.com/oklas/component-intl-example) -
           source code of this application itself,
-        * [demonstration component library](https://github.com/oklas/component-intl-welcome) -
+        * [component-intl-welcome](https://github.com/oklas/component-intl-welcome) -
           source code of library with the above "Welcome" component.

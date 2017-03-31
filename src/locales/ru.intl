@@ -32,7 +32,7 @@ ru:
         приложение и библиотеки. Приложение состоит из двух частей
         (репозитории с исходными текстами):
 
-        * [demonstration application](https://github.com/oklas/component-intl-example) -
+        * [component-intl-example](https://github.com/oklas/component-intl-example) -
           исходные тексты самого приложения,
-        * [demonstration component library](https://github.com/oklas/component-intl-welcome) -
+        * [component-intl-welcome](https://github.com/oklas/component-intl-welcome) -
           исходные тексты библиотеки компонента "Welcome" представленного выше.

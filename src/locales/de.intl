@@ -10,3 +10,31 @@ de:
       welcome-component: "
         externe bibliothekskomponenten mit eigenen exporten lokalisierung
       "
+      intro-top: |
+        [Herangehensweise](https://github.com/oklas/component-intl)
+        an die Locales-Organisation und den-Aufbau aus verschiedenen
+        *Untersystemen* und *Komponenten* der Anwendung sowie aus den
+        *Außenbibliotheken*, die auf die Beschleunigung der
+        Anwendungsausführung mit der Verringerung der Zeit und Größe der
+        geladenen Daten durch Hochladen von ausschließlich notwendigen
+        Locales eingestellt ist
+
+        Dieses Beispiel verwendet ein hervorragende
+        [intl-webpack-plugin](https://github.com/oklas/intl-webpack-plugin)
+        Plug-in für ein perfektes Einbausystem
+        [webpack](https://webpack.js.org/) zum Locales-Einbau entsprechend
+        der komponentenorientierten Herangehensweise an Internationalization.
+        Eine topnotch Bibliothek der Internationalization
+        [react-intl](https://github.com/yahoo/react-intl) wird zur
+        Formatierung und Bearbeitung der übersetzten Texte verwendet.
+
+      intro-bottom:  |
+        Dieses Demo-Programm mit der minimalen Anzahl von Abhängigkeiten
+        demonstriert, wie die Anwendung und Bibliotheken arbeiten sowie wie
+        diese aufzubauen und zu konfigurieren sind. Die Demo-Anwendung besteht
+        aus zwei Teilen (Repositorys mit den Quelltexten):
+
+        * [component-intl-example](https://github.com/oklas/component-intl-example) -
+          Quellcode der Anwendung selbst,
+        * [component-intl-welcome](https://github.com/oklas/component-intl-welcome) -
+          Quellcode der Bibliothek mit der oben angeführten Komponente "Welcome".

@@ -4,10 +4,33 @@
 zh:
   app:
     main-page:
-      title: 组件 的方法 至国际化
-      select-language: 选择语言
-      locale-file: 区域设置文件加载
+      title: 对国际化的化组件态度
+      select-language: 选择你的语言
+      locale-file: 区域设置文件装了
       welcome-component: "
-        外部组件库与自己的出口本地化
+        跟自己的出口本地化的化组外件庫
       "
+      intro-top: |
+        [态度](https://github.com/oklas/component-intl)
+        的各种语言环境 **子系统** 的组织和建设
+        和 **化组件** 和 **外部库** 应用程序
+        旨在加速最小化应用程序的执行
+        数据的时间和金额仅通过加载下载的语言环境 必要的语言环境
+
+        本例使用一个美妙的
+        [intl-webpack-plugin](https://github.com/oklas/intl-webpack-plugin)
+        插件针对不同的收集系统 [webpack](https://webpack.js.org/)
+        区域设置为装配在根据该组件的态度，以国际化。 精彩国际化图书馆
+        [react-intl](https://github.com/yahoo/react-intl)
+        它是用于翻译文本的格式和处理。
+
+      intro-bottom:  |
+        这与小相关的演示程序
+        它显示了它是如何工作以及如何构建和配置
+        应用程序和库。 应用由两个部分组成（库源）：
+
+        * [component-intl-example](https://github.com/oklas/component-intl-example) -
+          应用程序本身的源代码,
+        * [component-intl-welcome](https://github.com/oklas/component-intl-welcome) -
+          源组件库 "Welcome" 上面介绍的
 
